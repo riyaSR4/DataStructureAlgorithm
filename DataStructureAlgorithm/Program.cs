@@ -11,7 +11,7 @@ namespace DataStructureAlgorithm
             while (flag)
             {
                 Console.WriteLine("Enter the option to execute\n 1.Binary Search\n 2.Check Anagram or not\n " +
-                    "3.Replace String\n 4.Exit");
+                    "3.Replace String\n 4.Insertion Sort\n 5.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -28,6 +28,20 @@ namespace DataStructureAlgorithm
                         replaceString.StringReplace();
                         break;
                     case 4:
+                        InsertionSort insertionsort = new InsertionSort();
+                        Console.WriteLine("Enter the limit:");
+                        int n = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter the strings:");
+                        string[] ar = new string[n];
+                        for (int i = 0; i < n; i++)
+                        {
+                            ar[i] = Console.ReadLine();
+                        }
+                        insertionsort.SortByInsertion(ar);
+                        Console.WriteLine("Sorted Array:");
+                        insertionsort.Display(ar);
+                        break;
+                    case 5:
                         flag = false;
                         break;
                 }
