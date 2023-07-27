@@ -13,16 +13,16 @@ namespace DataStructureAlgorithm
             int n = ar.Length;
             for (int i = 1; i < n; i++)
             {
-                string key = ar[i];
+                string temp = ar[i];
                 int j = i - 1;
 
-                while (j >= 0 && string.Compare(ar[j], key) > 0)
+                while (j >= 0 && string.Compare(ar[j], temp) > 0)
                 {
                     ar[j + 1] = ar[j];
                     j = j - 1;
                 }
 
-                ar[j + 1] = key;
+                ar[j + 1] = temp;
             }
         }
 
