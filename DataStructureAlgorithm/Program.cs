@@ -11,7 +11,7 @@ namespace DataStructureAlgorithm
             while (flag)
             {
                 Console.WriteLine("Enter the option to execute\n 1.Binary Search\n 2.Check Anagram or not\n " +
-                    "3.Replace String\n 4.Insertion Sort\n 5.Exit");
+                    "3.Replace String\n 4.Insertion Sort\n 5.Bubble Sort\n 6.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -42,6 +42,10 @@ namespace DataStructureAlgorithm
                         insertionsort.Display(ar);
                         break;
                     case 5:
+                        BubbleSort bubbleSort = new BubbleSort();
+                        bubbleSort.SortBubble();
+                        break;
+                    case 6:
                         flag = false;
                         break;
                 }
