@@ -10,7 +10,8 @@ namespace DataStructureAlgorithm
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter the option to execute\n 1.Binary Search\n 2.Check Anagram or not\n 3.Exit");
+                Console.WriteLine("Enter the option to execute\n 1.Binary Search\n 2.Check Anagram or not\n " +
+                    "3.Replace String\n 4.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -23,6 +24,10 @@ namespace DataStructureAlgorithm
                         anagram.CheckAnagram();
                         break;
                     case 3:
+                        ReplaceString replaceString = new ReplaceString();
+                        replaceString.StringReplace();
+                        break;
+                    case 4:
                         flag = false;
                         break;
                 }
