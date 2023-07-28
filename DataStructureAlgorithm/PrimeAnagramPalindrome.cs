@@ -27,7 +27,7 @@ namespace DataStructureAlgorithm
                     {
                         if (IsPrime(num2) && AreAnagrams(num1, num2))
                         {
-                            Console.WriteLine(num1 + " ");
+                            Console.Write(num1 + " ");
                             break;
                         }
                     }
@@ -38,7 +38,7 @@ namespace DataStructureAlgorithm
             {
                 if (IsPrime(num) && IsPalindrome(num))
                 {
-                    Console.WriteLine(num + " ");
+                    Console.Write(num + " ");
                 }
             }
         }

@@ -11,7 +11,8 @@ namespace DataStructureAlgorithm
             while (flag)
             {
                 Console.WriteLine("Enter the option to execute\n 1.Binary Search\n 2.Check Anagram or not\n " +
-                    "3.Replace String\n 4.Insertion Sort\n 5.Bubble Sort\n 6.Print Prime Numbers between 0 and 1000\n 7.Exit");
+                    "3.Replace String\n 4.Insertion Sort\n 5.Bubble Sort\n 6.Print Prime Numbers between 0 and 1000\n " +
+                    "7.Print Prime Numbers that are Anagram and Palindrome\n 8.Merge Sort\n 9.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -54,6 +55,20 @@ namespace DataStructureAlgorithm
                         primeAnagramPalindrome.CheckPrimeAnagramPalindrome();
                         break;
                     case 8:
+                        MergeSort mergeSort = new MergeSort();
+                        Console.WriteLine("Enter the limit:");
+                        int n1 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter the strings:");
+                        string[] ar1 = new string[n1];
+                        for (int i = 0; i < n1; i++)
+                        {
+                            ar1[i] = Console.ReadLine();
+                        }
+                        mergeSort.SortByMerge(ar1);
+                        Console.WriteLine("\nSorted Array:");
+                        mergeSort.PrintArray(ar1);
+                        break;
+                    case 9:
                         flag = false;
                         break;
                 }
