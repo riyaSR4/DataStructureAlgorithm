@@ -11,7 +11,8 @@ namespace DataStructureAlgorithm
             while (flag)
             {
                 Console.WriteLine("Enter the option to execute\n 1.Binary Search\n 2.Check Anagram or not\n " +
-                    "3.Replace String\n 4.Insertion Sort\n 5.Bubble Sort\n 6.Print Prime Numbers between 0 and 1000\n 7.Exit");
+                    "3.Replace String\n 4.Insertion Sort\n 5.Bubble Sort\n 6.Print Prime Numbers between 0 and 1000\n" + 
+                                  "7.Print Prime Numbers that are Anagram and Palindrome\n 8.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
