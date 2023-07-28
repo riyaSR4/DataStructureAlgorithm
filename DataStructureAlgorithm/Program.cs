@@ -50,6 +50,10 @@ namespace DataStructureAlgorithm
                         primeNumbers.PrintPrimeNumbers();
                         break;
                     case 7:
+                        PrimeAnagramPalindrome primeAnagramPalindrome = new PrimeAnagramPalindrome();
+                        primeAnagramPalindrome.CheckPrimeAnagramPalindrome();
+                        break;
+                    case 8:
                         flag = false;
                         break;
                 }
